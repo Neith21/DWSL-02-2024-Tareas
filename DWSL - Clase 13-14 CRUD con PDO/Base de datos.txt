@@ -1,0 +1,24 @@
+CREATE DATABASE CustomerDB;
+
+USE CustomerDB;
+
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    dui VARCHAR(15) NOT NULL,
+    email VARCHAR(255),
+    address VARCHAR(255)
+);
+
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    user VARCHAR(255),
+    password VARCHAR(255)
+);
+
+INSERT INTO user (name, user, password)
+VALUES ('Ariel', 'CriAri', '202cb962ac59075b964b07152d234b70');
+
+select * from customer;
